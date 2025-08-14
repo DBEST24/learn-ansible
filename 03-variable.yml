@@ -9,6 +9,8 @@
   connection: local
   vars:
      a: 100
+  roles:
+    - sample
   tasks:
     - name: Print Variable
       ansible.builtin.debug:
