@@ -15,5 +15,5 @@
   tasks:
     - name: Print Variable
       ansible.builtin.set_fact:
-        msg: "a - {{ a }} + {{ b }} = {{ a + b }}"
+        msg: "a -  {{ a + b }}"
 
