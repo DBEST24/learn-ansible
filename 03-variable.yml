@@ -7,11 +7,13 @@
 - name: Variable Demo
   hosts: localhost
   connection: local
-
+  vars:
+    a: 100
+    b: 200
   roles:
     - sample
   tasks:
     - name: Print Variable
-      ansible.builtin.debug:
+      ansible.builtin.set_fact:
         msg: "a - {{ a }} + {{ b }} = {{ a + b }}"
 
