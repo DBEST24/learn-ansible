@@ -13,5 +13,5 @@
   tasks:
     - name: Print Variable
       ansible.builtin.debug:
-        msg: "a - {{ a }} + {{ b }}"
+        msg: "a - {{ a }} + {{ b }} = {{ a + b }}"
 
