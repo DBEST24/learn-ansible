@@ -16,4 +16,8 @@
     - name: Print Variable
       ansible.builtin.debug:
         msg: "a -  {{ a + b }}"
-
+    - name: Print Variable - task level
+      vars:
+         a: 200
+      ansible.builtin.debug:
+         msg: a - {{ a }}
