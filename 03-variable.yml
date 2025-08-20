@@ -14,6 +14,6 @@
     - sample
   tasks:
     - name: Print Variable
-      ansible.builtin.set_fact:
+      ansible.builtin.debug:
         msg: "a -  {{ a + b }}"
 
